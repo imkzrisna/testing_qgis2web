@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wulan sayangg :3 semangat yaaa</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+<script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+<link rel="icon" href="assets/favicon.png" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="map"></div>
+<div id="feature-info-card" class="feature-info-card" hidden>
+  <div class="feature-info-card-header">
+    <div class="feature-info-card-header-text">
+      <div id="feature-info-card-title" class="feature-info-card-title"></div>
+      <div id="feature-info-card-subtitle" class="feature-info-card-subtitle"></div>
+    </div>
+    <button type="button" id="feature-info-card-close" class="feature-info-card-close">&times;</button>
+  </div>
+  <div class="feature-info-card-body">
+    <table id="feature-info-card-table" class="feature-info-card-table"></table>
+  </div>
+</div>
+<div id="layer-toggle-panel" class="layer-toggle-panel" hidden>
+  <div class="layer-toggle-header">
+    <span class="layer-toggle-title">Layer</span>
+    <button type="button" id="layer-toggle-collapse-btn" class="layer-toggle-collapse-btn">&#9660;</button>
+  </div>
+  <div id="layer-toggle-list" class="layer-toggle-list"></div>
+</div>
+<div id="attribute-table-panel" class="attribute-table-panel" hidden>
+  <div class="attribute-table-header">
+    <div class="attribute-table-header-left">
+      <span class="attribute-table-title">Attribute Table</span>
+      <select id="attribute-table-layer-select" class="attribute-table-layer-select"></select>
+      <span id="attribute-table-count" class="attribute-table-count"></span>
+    </div>
+    <button type="button" id="attribute-table-toggle-btn" class="attribute-table-toggle-btn">&#9660;</button>
+  </div>
+  <div id="attribute-table-body" class="attribute-table-body">
+    <div class="attribute-table-scroll">
+      <table id="attribute-data-table" class="attribute-data-table"></table>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
